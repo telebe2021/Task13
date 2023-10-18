@@ -1,0 +1,117 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+nav{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    margin-top: 5%;
+}
+header{
+    /* 
+    height:100px ;
+    background-color: blueviolet;
+    align-items: center; */
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    margin-top: 5%;
+}
+section{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    margin-top: 5%; 
+    /* background-color: aqua;*/
+}
+.grida{
+    width: 50%;
+    height:100px;
+    background-color: rgb(226, 143, 19);
+}
+.gridb{
+    width: 100%;
+    height:200px;
+    background-color: rgb(193, 219, 23);
+    
+    flex-direction: column;
+}
+.gridc{
+    width: 33%;
+    height:150px;
+    background-color: rgb(87, 105, 207);
+    gap:5%;
+}
+footer{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; 
+    width:100%;
+    margin-top:5% ;
+    margin-bottom:7% ;
+    gap: 5%;
+}
+.gridd{
+    width: 23%;
+    height:100px;
+    background-color: rgb(142, 141, 171);
+}
+@media screen and (min-width:650px) and (max-width:1024px) {
+    .nav{
+        width: 47%;
+    }
+    nav .grida{
+        width:100% ;
+    }
+    header .gridb{
+        width: 100%;
+    }
+    section{
+        height: 510px;
+        flex-wrap: wrap;
+    }
+    section .gridc{
+        width: 100%;
+    }
+    footer{
+        height: 490px;
+        flex-wrap: wrap;
+    }
+    footer .gridd{
+        width: 47%;
+    }
+    }
+    @media screen and  (max-width: 650px) {
+        nav{
+            flex-direction: column 
+        }
+        nav .grida{
+            width: 100%;
+        }
+        header .gridb{
+            width: 100%;
+        }
+        section{
+            width:100%;
+            height: 510px;
+            flex-wrap: wrap;
+        }
+        section .gridc{
+            width: 100%;
+            
+        }
+        footer{
+            height: 490px;
+            flex-wrap: wrap;
+        }
+        footer .gridd{
+            width: 100%;
+        }
+        }
